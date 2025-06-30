@@ -15,6 +15,7 @@ app.get('/run-manual-collection', (_, res) => {
     }
   });
 });
+
 app.get('/', (req, res) => {
   res.send('Serveur en ligne !');
 });
