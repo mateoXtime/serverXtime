@@ -1,0 +1,3 @@
+@echo off
+cd /d C:\Users\mateo\WebstormProjects\scrape-manuals.cjs
+node collect-manual-names.mjs
