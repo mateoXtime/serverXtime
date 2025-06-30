@@ -19,14 +19,16 @@ app.get('/run-manual-collection', (_, res) => {
 app.get('/', (req, res) => {
   res.send('Serveur en ligne !');
 });
+
+app.get("/test", (req, res) => {
+  res.json({ message: "✅ Requête bien reçue depuis n8n !" });
+});
+
 const PORT = process.env.PORT || 3001;
 
 app.listen(PORT, () => {
   console.log(`Serveur prêt sur http://localhost:${PORT}`);
 });
 
-app.get("/test", (req, res) => {
-  res.json({ message: "✅ Requête bien reçue depuis n8n !" });
-});
 
 
