@@ -15,5 +15,8 @@ app.get('/run-manual-collection', (_, res) => {
     }
   });
 });
+app.get('/', (req, res) => {
+  res.send('Serveur en ligne !');
+});
 
 app.listen(PORT, () => console.log(`✅ Serveur prêt sur http://localhost:${PORT}`));
