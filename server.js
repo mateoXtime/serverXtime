@@ -2,7 +2,7 @@ import express from 'express';
 import { exec } from 'child_process';
 
 const app = express();
-const PORT = 3001;
+
 
 app.get('/run-manual-collection', (_, res) => {
   exec('node ./src/collect-manual-names.mjs', { cwd: 'C:/Users/mateo/WebstormProjects/scrape-manuals.cjs' }, (err, stdout, stderr) => {
