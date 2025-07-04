@@ -2,5 +2,6 @@ services:
   - type: web
     name: serverXtime
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    plan: free
