@@ -13,8 +13,8 @@ app = Flask(__name__)
 
 # Initialise le client Qdrant
 qdrant = QdrantClient(
-    url="https://your-qdrant-endpoint",  # ← remplace par ton vrai lien
-    api_key="YOUR_QDRANT_API_KEY"       # ← remplace par ta vraie clé
+    url="https://f1242dac-7cf9-4440-8714-33de13d20341.us-west-2-0.aws.cloud.qdrant.io",  # ← remplace par ton vrai lien
+    api_key="Qdrant_b9e59f42-e02b-4348-a8df-bf80c6ecb9b4"       # ← remplace par ta vraie clé
 )
 
 embeddings = OpenAIEmbeddings()
