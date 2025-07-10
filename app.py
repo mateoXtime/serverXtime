@@ -21,9 +21,9 @@ try:
     qdrant.get_collection("pdf-manuals")
 except:
     if not qdrant.collection_exists("pdf-manuals"):
-    qdrant.create_collection(
-        collection_name="pdf-manuals",
-        vectors_config=VectorParams(size=1536, distance=Distance.COSINE)
+        qdrant.create_collection(
+            collection_name="pdf-manuals",
+            vectors_config=VectorParams(size=1536, distance=Distance.COSINE)
     )
 
 
