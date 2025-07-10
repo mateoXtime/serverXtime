@@ -17,6 +17,14 @@ qdrant = QdrantClient(
     api_key="Qdrant_b9e59f42-e02b-4348-a8df-bf80c6ecb9b4"       # ← remplace par ta vraie clé
 )
 
+try:
+    qdrant.get_collection("pdf-manuals")
+except:
+    qdrant.recreate_collection(
+        collection_name="pdf-manuals",
+        vectors_config=VectorParams(size=1536, distance=Distance.COSINE)
+    )
+
 embeddings = OpenAIEmbeddings()
 
 @app.route('/process_pdfs', methods=['POST'])
