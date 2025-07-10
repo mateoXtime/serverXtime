@@ -1,1 +1,6 @@
 Flask==2.2.5
+requests
+PyMuPDF
+langchain
+qdrant-client
+openai
