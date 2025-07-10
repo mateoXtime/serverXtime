@@ -1,6 +1,6 @@
 Flask==2.2.5
-requests
-PyMuPDF
 langchain
+langchain-community
 qdrant-client
 openai
+PyMuPDF
